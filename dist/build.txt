@@ -1,0 +1,8 @@
+
+./d3charts/d3charts.js
+----------------
+./d3charts/common/legend.js
+./d3charts/chart.js
+./d3charts/d3charts.js
+./d3charts/chart/line.js
+./d3charts/chart/bar.js

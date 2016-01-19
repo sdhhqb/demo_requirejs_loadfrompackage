@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>d3charts</title>
+</head>
+<body>
+	<p>demo</p>
+
+<script src="./lib/require.js"></script>
+<script src="./dist/d3charts/d3charts.js"></script>
+<script>
+require.config({
+	packages: [
+		{
+	        name: "d3charts",
+	        main: "d3charts"
+	    }
+    ],
+    paths: {
+    	d3charts: './dist/d3charts'
+    }
+});
+require(
+	[
+		'd3charts',
+		'd3charts/chart/line',
+		'd3charts/chart/bar',
+		'd3charts/chart/pie'
+	],
+	function (d3charts) {
+		console.log(d3charts);
+
+	}
+);
+</script>
+</body>
+</html>
